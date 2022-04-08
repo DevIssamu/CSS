@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento do background </title>
+
+    <style>
+        .bloco{
+            height: 150px;
+            border: 1px solid black;
+            margin-bottom: 4px;
+            border-radius: 10px;
+            background-image: url(imagens/wallpaper002.jpg);
+        }
+
+        div#bloco1 {
+           background-position: center top;
+        }
+
+        div#bloco2 {
+            background-position: right bottom;
+        }
+
+        div#bloco3 {
+            background-position: left center;
+        }
+
+        div#bloco4 {
+            background-position: center center ;
+        }
+    </style>
+</head>
+<body>
+    <div class="bloco" id="bloco1"></div>
+    <div class="bloco" id="bloco2"></div>
+    <div class="bloco" id="bloco3"></div>
+    <div class="bloco" id="bloco4"></div>
+</body>
+</html>
