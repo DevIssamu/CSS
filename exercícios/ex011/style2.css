@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1200px; 
+}
+
+table {
+    width: 500px;
+    border-collapse: collapse;
+    position: relative;
+    
+}
+
+caption {
+    font-size: 1.5rem;
+    padding: 10px;
+    
+}
+
+/* efeito zebrado, usando uma pseudo-classe*/
+tbody > tr:nth-child(2n) {
+    background-color: lightblue;
+
+}
+
+td, th {
+    border: 1px solid rgba(51, 78, 234, 0.355);
+    padding: 10px;
+    
+}
+ /* cabeçalho fixo correndo com a tabela
+    dar um position relative na table 
+    e um position sticky no cabeçalho com top 0px
+*/
+thead {
+    position: sticky;
+    top: -1px;
+}
+
+thead, tfoot {
+    background-color: rgb(51, 55, 167);
+    color: white;
+}
+
+td.num {
+    text-align: right;
+}
+
