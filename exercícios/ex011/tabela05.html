@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 05 Isolando Colunas</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table > caption {
+            font-size: 1.5rem;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 400px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        col.nome {
+            background-color: aqua;
+        }
+
+        col.grupo {
+            background-color: chartreuse;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    <table>
+
+        <colgroup>
+            <col class="nome">
+            <col class="grupo" span="2">
+            <col class="Prof">
+        </colgroup>
+
+        <caption><strong>Cadastro</strong></caption>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Maria</td>
+                <td>Fem</td>
+                <td>29</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Cláudio</td>
+                <td>Mas</td>
+                <td>32</td>
+                <td>Médico</td>
+            </tr>
+            <tr>
+                <td>Fernanda</td>
+                <td>Fem</td>
+                <td>35</td>
+                <td>Analista</td>
+            </tr>
+            <tr>
+                <td>Augusto</td>
+                <td>Mas</td>
+                <td>58</td>
+                <td>Pescador</td>
+            </tr>
+            <tr>
+                <td>Matheus</td>
+                <td>Masc</td>
+                <td>78</td>
+                <td>Enxadrista</td>
+            </tr>
+            <tr>
+                <td>Adriana</td>
+                <td>Fem</td>
+                <td>21</td>
+                <td>Garçonete</td>
+            </tr>  
+        </tbody>
+    </table>
+    
+</body>
+</html>
